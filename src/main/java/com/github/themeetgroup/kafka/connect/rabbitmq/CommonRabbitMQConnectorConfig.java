@@ -207,7 +207,7 @@ public abstract class CommonRabbitMQConnectorConfig extends AbstractConfig {
           TrustManagerFactory tmf = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
           tmf.init(ks);
         } else {
-          tm = new TrustManager[] { new TrustEverythingTrustManager() };
+          tm = new TrustManager[] {new TrustEverythingTrustManager()};
         }
 
         SSLContext c = SSLContext.getInstance("TLSv1.2");
